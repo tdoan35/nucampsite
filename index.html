@@ -33,7 +33,7 @@
 
                 <div class="col-md-4 col-xl-2 align-self-center">
                     <!-- Reserve Campsite (Button Trigger) Modal -->
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#reserveModal">
+                    <button type="button" class="btn btn-info" id="reserveButton">
                         Reserve Campsite
                     </button>
 
@@ -120,13 +120,14 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                         <i class="fa fa-sign-in"></i> Login</a>
                 </span>
             </div>
         </div>
     </nav>
 
+    <!-- Login Modal -->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -174,6 +175,7 @@
     <div class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
+                <!-- Home Carousel -->
                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
